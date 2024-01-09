@@ -37,14 +37,23 @@ const Home = () => {
 
   return (
     <View style={{ flex: 1, marginTop: Constants.statusBarHeight }}>
+      <Text style={{
+        fontSize: 20,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginVertical: 10
+      }}>ToDo App</Text>
       <View style={styles.inputContainer}>
         <TextInput value={text}
           onChangeText={(text) => {
             setText(text)
           }} style={styles.textInput} placeholder='Enter task'></TextInput>
-        <Button onPress={() => {
+        <View>
+          <Text style={styles.addButton}>Add Task</Text>
+        </View>
+        {/* <Button onPress={() => {
           addTask(text)
-        }} title='Add' />
+        }} title='Add' /> */}
       </View>
       <View>
         {

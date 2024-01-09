@@ -30,6 +30,14 @@ const styles =  StyleSheet.create({
   deleteIcon: {
     height: 20, 
     width: 20,
+  },
+  addButton: {
+    backgroundColor: '#007aff',
+    color: '#fff',
+    fontWeight: 'bold',
+    paddingHorizontal: 15,
+    paddingVertical: 8.5,
+    borderRadius: 4,
   }
 });
 
