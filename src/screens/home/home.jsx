@@ -49,11 +49,10 @@ const Home = () => {
             setText(text)
           }} style={styles.textInput} placeholder='Enter task'></TextInput>
         <View>
-          <Text style={styles.addButton}>Add Task</Text>
+          <Text onPress={() => {
+            addTask(text)
+          }} style={styles.addButton}>Add Task</Text>
         </View>
-        {/* <Button onPress={() => {
-          addTask(text)
-        }} title='Add' /> */}
       </View>
       <View>
         {
